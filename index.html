@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feria de Diseño 3 de abril</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="Logo DDW" /></a>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#articles">Noticias</a>
+          <a href="#grid">Galeria</a>
+          <a href="#mail">Contacto</a>
+        </nav>
+
+        <div class="iconos-derecha">
+          <div class="busqueda">
+            <span class="material-symbols-outlined busqueda-icono" tabindex="0"
+              >search</span
+            >
+            <button id="menu" aria-label="Menú">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div id="titulo">
+        <h1>DDW - Feria del diseño</h1>
+        <p id="subtitulo-desktop">
+          Conectá, inspirate y construí el futuro en la feria que transforma
+          ideas en acción.
+        </p>
+      </div>
+    </section>
+
+    <section id="articles">
+      <h2>Noticias</h2>
+      <div class="seccion-articulos">
+        <article class="card">
+          <div class="img-container">
+            <img src="img/art1.png" alt="Descripción 1" />
+            <img src="img/estrella.png" alt="estrella" class="estrella" />
+          </div>
+          <h3>Sobre DDW</h3>
+          <p>Diseño que inspira</p>
+          <button>
+            Ver más<span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="img-container">
+            <img src="img/art2.png" alt="Descripción 2" />
+            <img src="img/estrella.png" alt="estrella" class="estrella" />
+          </div>
+          <h3>Participá</h3>
+          <p>Sumate a nosotros</p>
+          <button>
+            Ver más<span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="img-container">
+            <img src="img/art3.png" alt="Descripción 3" />
+            <img src="img/estrella.png" alt="estrella" class="estrella" />
+          </div>
+          <h3>Fechas y Plazos</h3>
+          <p>No te demores!</p>
+          <button>
+            Ver más<span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </article>
+
+        <article class="card solo-texto">
+          <img class="img_tablet" src="img/art4.png" alt="Descripción 2" />
+          <h3>Cuota de participación</h3>
+          <p>Invertí en creatividad</p>
+          <button>
+            Ver más<span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </article>
+
+        <article class="card solo-desktop">
+          <img src="img/art5.png" alt="Descripción extra" />
+          <h3>Preguntas frecuentes</h3>
+          <p>Resolvé tus dudas</p>
+          <button>
+            Ver más<span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <h2>Galeria</h2>
+
+    <section id="grid">
+      <div><img src="img/img1.jpg" alt="" class="grid-img" /></div>
+      <div><img src="img/img2.jpg" alt="" class="grid-img" /></div>
+
+      <div class="grid-item-contenido">
+        <img src="img/img3.jpg" alt="Imagen con texto" class="grid-img" />
+        <div class="contenido-sobre-imagen">
+          <p>¡Sumate a la Feria!</p>
+          <button>Conocé más</button>
+        </div>
+      </div>
+      <div class="grid-item-contenido">
+        <img
+          src="img/img4.jpg"
+          alt="Puesto de emprendedores"
+          class="grid-img img-tablet img-desktop"
+        />
+        <div class="contenido-sobre-imagen">
+          <h3>Emprendedores locales</h3>
+          <p>Descubrí productos únicos y hechos con amor en cada detalle.</p>
+        </div>
+      </div>
+
+      <div><img src="img/img5.jpg" alt="" class="grid-img img-desktop" /></div>
+      <div><img src="img/img6.jpg" alt="" class="solo_desktop" /></div>
+    </section>
+
+    <div id="mail">
+      <div id="cajita-mail">
+        <div id="textos_form">
+          <h2>Suscribite para más</h2>
+          <p>
+            ¡Mantenete al tanto de lo que viene! <br />Actualizaciones sobre
+            nuevos eventos, ubicaciones y destacados seleccionados por nuestro
+            equipo y expertos.
+          </p>
+        </div>
+
+        <form id="emailForm">
+          <div class="fila-inputs">
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Apellido" />
+          </div>
+          <input type="email" placeholder="E-mail" />
+          <button type="submit">
+            Subscribe
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="video">
+      <img src="img/estrella.png" alt="" />
+      <iframe
+        width="640"
+        height="360"
+        src="https://www.youtube.com/embed/54rMw6zziDU"
+        title="Video YouTube"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Feria de Diseño.</p>
+        <ul class="links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
